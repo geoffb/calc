@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Calculator</title>
+    <link rel="icon" sizes="192x192" href="images/icons/calc-icon-192x192.png" />
+    <link rel="icon" sizes="32x32" href="images/icons/calc-icon-32x32.png" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <div id="output"></div>
+    <div id="input">
+      <div class="row">
+        <button class="clear" x-value="C" title="Clear">C</button>
+        <button class="clear" x-value="X" title="Backspace">&larr;</button>
+        <button class="op" x-value="^" title="Exponentiation">x&#8319;</button>
+        <button class="op" x-value="/" title="Divide">&divide;</button>
+      </div>
+      <div class="row">
+        <button x-value="7">7</button>
+        <button x-value="8">8</button>
+        <button x-value="9">9</button>
+        <button class="op" x-value="*" title="Multiply">&times;</button>
+      </div>
+      <div class="row">
+        <button x-value="4">4</button>
+        <button x-value="5">5</button>
+        <button x-value="6">6</button>
+        <button class="op" x-value="-" title="Subtract">&minus;</button>
+      </div>
+      <div class="row">
+        <button x-value="1">1</button>
+        <button x-value="2">2</button>
+        <button x-value="3">3</button>
+        <button class="op" x-value="+" title="Add">+</button>
+      </div>
+      <div class="row">
+        <button x-value="0">0</button>
+        <button x-value=".">.</button>
+        <button x-value="_" title="Change Sign">&plusmn;</button>
+        <button class="eval" x-value="=" title"Calculate">=</button>
+      </div>
+    </div>
+
+    <script src="js/Calculator.js"></script>
+    <script src="js/calc.js"></script>
+  </body>
+</html>
